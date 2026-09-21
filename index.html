@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S. Bhanu Sanjana | Cybersecurity Portfolio</title>
+<meta name="description" content="Portfolio of S. Bhanu Sanjana, Computer Science and Engineering student specializing in Cybersecurity.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#080b12;--panel:#101520;--panel2:#141a25;--text:#f4f7fb;--muted:#98a2b3;--line:#202938;--accent:#6ee7ff;--accent2:#8b7cff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 10%,#5265ff18,transparent 32%),radial-gradient(circle at 10% 40%,#00d9ff0d,transparent 28%)}
+nav{position:sticky;top:0;z-index:10;height:72px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;background:#080b12dd;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-family:"Space Grotesk";font-size:21px;font-weight:700}.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:25px}nav a:hover{color:var(--text)}
+.container{max-width:1120px;margin:auto;padding-left:8%;padding-right:8%}
+.hero{min-height:calc(100vh - 72px);display:flex;align-items:center;padding-top:65px;padding-bottom:80px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--accent);text-transform:uppercase}
+h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,78px);line-height:1.02;letter-spacing:-3px;max-width:850px;margin:18px 0}
+.gradient{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:700px;color:var(--muted);font-size:18px}
+.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;padding:12px 19px;border-radius:9px;font-size:14px;font-weight:700}
+.primary{background:var(--text);color:#080b12}.secondary{border:1px solid var(--line);color:var(--text);background:var(--panel)}
+section{padding:90px 0}.section-label{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:2px}
+h2{font-family:"Space Grotesk";font-size:38px;letter-spacing:-1.5px;margin:9px 0 12px}
+.section-intro{color:var(--muted);max-width:650px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.about p{color:#c0c7d2;font-size:16px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.info div{padding:17px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.info strong{display:block;font-family:"Space Grotesk";font-size:19px}.info span{font-size:12px;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.skill{padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:13px;color:#cbd2dc}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.card{background:linear-gradient(145deg,var(--panel),#0d121b);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#34445d}
+.card-top{display:flex;justify-content:space-between;gap:15px;align-items:start}.number{font-family:"Space Grotesk";color:#536174;font-size:13px}
+.card h3{font-family:"Space Grotesk";font-size:20px;margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.tags{margin-top:18px;color:var(--accent);font-size:12px}
+.timeline{border-left:1px solid var(--line);padding-left:28px;margin-top:28px}.job{position:relative;padding-bottom:12px}.job:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--accent);left:-33px;top:8px}
+.job h3{font-family:"Space Grotesk";font-size:20px}.date{font-size:12px;color:var(--accent);margin:3px 0 10px}.job p{color:var(--muted);font-size:14px;max-width:850px}
+.contact{margin-top:25px;background:linear-gradient(120deg,#121b2b,#10141d);border:1px solid var(--line);border-radius:20px;padding:45px}
+.contact p{color:var(--muted);margin-bottom:22px}.links{display:flex;gap:12px;flex-wrap:wrap}.links a{color:var(--text);text-decoration:none;border:1px solid var(--line);padding:10px 14px;border-radius:8px;font-size:13px}
+footer{border-top:1px solid var(--line);padding:28px 8%;color:#687386;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:760px){nav{padding:0 5%}.container{padding-left:5%;padding-right:5%}.hero{min-height:auto;padding-top:90px}.about,.grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.navlinks a{margin-left:10px}.navlinks a:nth-child(-n+2){display:none}h1{letter-spacing:-2px}.contact{padding:30px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">Sanjana<span>.</span></div>
+  <div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero container">
+  <div>
+    <div class="eyebrow">Computer Science • Cybersecurity</div>
+    <h1>Hi, I'm <span class="gradient">Sanjana.</span><br>Building secure solutions through technology.</h1>
+    <p>Computer Science and Engineering student specializing in Cybersecurity, with hands-on experience in web application security, VAPT, networking, databases and software projects.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View Projects →</a>
+      <a class="btn secondary" href="https://github.com/sanjana09ss" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+<div class="container">
+  <div class="about">
+    <div><div class="section-label">01 — ABOUT</div><h2>Learning by building.</h2></div>
+    <div>
+      <p>I'm pursuing a B.Tech in Computer Science and Engineering (Cybersecurity) at GITAM University. I enjoy understanding how systems work, testing their security, and building practical technology projects.</p>
+      <div class="info">
+        <div><strong>8.74 / 10</strong><span>Current CGPA</span></div>
+        <div><strong>2028</strong><span>Expected graduation</span></div>
+        <div><strong>Cybersecurity</strong><span>Specialization</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <div class="section-label">02 — TECHNICAL SKILLS</div><h2>My toolkit.</h2>
+  <p class="section-intro">Programming, security, networking and development fundamentals I have worked with.</p>
+  <div class="skills">
+    <span class="skill">Python</span><span class="skill">C</span><span class="skill">Java</span><span class="skill">Object-Oriented Programming</span>
+    <span class="skill">Data Structures & Algorithms</span><span class="skill">DBMS</span><span class="skill">Oracle SQL</span><span class="skill">VS Code</span>
+    <span class="skill">Wireshark</span><span class="skill">Cisco Packet Tracer</span><span class="skill">Jira</span><span class="skill">Burp Suite</span>
+    <span class="skill">TCP/IP</span><span class="skill">DNS</span><span class="skill">HTTP</span><span class="skill">IPv4/IPv6</span><span class="skill">VLANs</span>
+    <span class="skill">Network Traffic Analysis</span><span class="skill">Web Application Security</span><span class="skill">VAPT</span><span class="skill">OWASP Top 10</span>
+    <span class="skill">Vulnerability Assessment</span><span class="skill">Cryptography</span><span class="skill">Linux (Kali)</span>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <div class="section-label">03 — EXPERIENCE</div><h2>Security in practice.</h2>
+  <div class="timeline">
+    <div class="job">
+      <h3>VAPT Intern · Mich Josh Cybersecurity</h3>
+      <div class="date">MAY 2026 — JUNE 2026</div>
+      <p>Performed hands-on web application security testing through PortSwigger Web Security Academy labs. Worked with Burp Suite to intercept, analyze and modify HTTP requests while investigating SSRF, Path Traversal, Information Disclosure and Version Control History vulnerabilities. Practiced vulnerability assessment and penetration testing methodologies and documented findings.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <div class="section-label">04 — PROJECTS</div><h2>Selected work.</h2>
+  <div class="grid">
+    <article class="card"><div class="card-top"><h3>Event Management System</h3><span class="number">01</span></div><p>Co-developed a full-stack event management application with a frontend interface and MySQL backend. Designed a normalized relational schema for events, attendees and bookings and wrote SQL queries for retrieval, insertion and reporting.</p><div class="tags">PYTHON · MYSQL</div></article>
+    <article class="card"><div class="card-top"><h3>Smart Vacuum Cleaner Robot</h3><span class="number">02</span></div><p>Co-designed and built a vacuum robot with ultrasonic-based obstacle detection and autonomous avoidance. Contributed to Arduino motor control, circuit design, sensor integration and hardware assembly.</p><div class="tags">ARDUINO · C++ · DC MOTORS</div></article>
+    <article class="card"><div class="card-top"><h3>EDUPLAY</h3><span class="number">03</span></div><p>Co-developed an interactive web platform for rural education with game-based learning features. Contributed to browser-based simulations and prototype development focused on student engagement.</p><div class="tags">HTML5 · CLIENT-SIDE SCRIPTING · SIH 2025</div></article>
+    <article class="card"><div class="card-top"><h3>Auditorium Seat Booking System</h3><span class="number">04</span></div><p>Co-developed a digital auditorium booking system applying arrays, traversal, insertion, deletion and linear search. Implemented seat allocation, availability tracking, booking validation and digital ticket generation.</p><div class="tags">C · JAVA · DATA STRUCTURES</div></article>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-label">05 — CONNECT</div>
+  <div class="contact">
+    <h2>Let's build something useful.</h2>
+    <p>I'm interested in cybersecurity, technology projects, hackathons, learning opportunities and collaborations.</p>
+    <div class="links">
+      <a href="mailto:sanjasambangi109@gmail.com">Email</a>
+      <a href="https://github.com/sanjana09ss" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/bhanu-sanjana-sambangi" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer><span>© 2026 S. Bhanu Sanjana</span><span>Cybersecurity · Technology · Learning</span></footer>
+</body>
+</html>
